@@ -1,0 +1,11 @@
+type Query {
+  cost: Cost!
+  route: Route!
+}
+
+type Route {
+  name: String!
+}
+type Cost {
+  total: Int!
+}
