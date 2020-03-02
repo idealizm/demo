@@ -50,7 +50,6 @@ const edgeFD = new GraphEdge(vertexF, vertexD, 1);
     const vertices = graph.getAllVertices();
     const vertexDIndex = vertices.indexOf(vertexD);
     const vertexEIndex = vertices.indexOf(vertexE);
-  
 
     expect(distances).toEqual([
       [ 6, 1, 4, 7, 4, 6 ],

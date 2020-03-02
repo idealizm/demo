@@ -54,7 +54,6 @@ export default function shortest(graph: any) {
       // Path ends to endVertex with endIndex.
       vertices.forEach((endVertex: any, endIndex: number) => {
         const distViaMiddle = distances[startIndex][middleIndex] + distances[middleIndex][endIndex];
-
         if (distances[startIndex][endIndex] > distViaMiddle) {
           // We've found a shortest pass via middle vertex.
           count[startIndex][endIndex] = Math.max(

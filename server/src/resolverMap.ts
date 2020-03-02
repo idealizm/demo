@@ -105,4 +105,4 @@ const resolverMap: IResolvers = {
   },
 };
 
-export default resolverMap ,{getCostByDirectRoutegetCheapestCostByRoute,};
+export default resolverMap;
