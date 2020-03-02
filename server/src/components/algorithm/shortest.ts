@@ -67,6 +67,8 @@ export default function shortest(graph: any) {
     });
   });
 
+  console.log(distances)
+
   // Shortest distance from x to y: distance[x][y].
   // Next vertex after x one in path from x to y: nextVertices[x][y].
   return { distances, nextVertices, count };

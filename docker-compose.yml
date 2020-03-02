@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  client-app:
+    container_name: client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - './client:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3000:3000'
+  server-app:
+    container_name: server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - './server:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '4000:4000'

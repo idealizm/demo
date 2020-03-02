@@ -4,14 +4,14 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: GetCost
+// GraphQL query operation: GetCheapestCostByRoute
 // ====================================================
 
-export interface GetCost_cost {
-  __typename: "Cost";
-  total: number;
+export interface GetCheapestCostByRoute {
+  getCheapestCostByRoute: number;
 }
 
-export interface GetCost {
-  cost: GetCost_cost;
+export interface GetCheapestCostByRouteVariables {
+  start: string;
+  end: string;
 }

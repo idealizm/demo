@@ -1,11 +1,5 @@
 type Query {
-  cost: Cost!
-  route: Route!
+  getCostByDirectRoute(routes:[String!]):Int!
+  getCheapestCostByRoute(start:String!,end:String!):Int!
 }
 
-type Route {
-  name: String!
-}
-type Cost {
-  total: Int!
-}

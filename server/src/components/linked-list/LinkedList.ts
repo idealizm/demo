@@ -107,14 +107,10 @@ export default class LinkedList {
     let currentNode = this.head;
 
     while (currentNode) {
-      // If callback is specified then try to find node by callback.
-      console.log(currentNode);
-
       if (callback && callback(currentNode.value)) {
         return currentNode;
       }
 
-      // If value is specified then try to compare by value..
       if (value !== undefined && this.compare.equal(currentNode.value, value)) {
         return currentNode;
       }
